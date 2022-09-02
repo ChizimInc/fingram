@@ -2,9 +2,9 @@ import * as React from 'react'
 import { Input } from "./Input"
 import { Header } from "./Header"
 import { ChatContainer } from "./ChatContainer"
-import { addMessage } from "../../store/actionCreators"
 import { useDispatch } from "react-redux"
 import { Dispatch } from "redux"
+import { addMessage } from '../../store/actions/messageActions'
 
 export const Main = () => {
     const dispatch: Dispatch<any> = useDispatch()

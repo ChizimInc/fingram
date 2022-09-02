@@ -30,9 +30,11 @@ export const Input: React.FC<Props> = ({ sendMessage }) => {
             <div className="absolute bottom-[15px] w-full flex items-center">
                 <input 
                     type="text" 
-                    placeholder="Type..." 
+                    placeholder="Type" 
                     className="w-full h-[35px] p-2.5 rounded-lg" 
                     style={style.input}
+                    id="body"
+                    value=""
                     onChange={handleMessageData}
                 />
                 <div 
